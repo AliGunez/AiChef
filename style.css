@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(255, 220, 220);
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(228, 228, 228);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 720;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(255, 52, 52);
+    padding: 35px;
+}
+
+header .logo {
+    font-size: 80px;
+    line-height: 1;
+    bottom: -3px;
+    position: relative;
+    margin-top: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+
+.ingredients {
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 112px);
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+
+
+.ingredient {
+    width: 80px;
+    height: 80px;
+    line-height: 2;
+    border: 3px solid black;
+    border-radius: 20%;
+    overflow: hidden;
+    gap: 10px;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.bowl {
+    display: grid;
+    grid-template-columns: repeat(3, 172px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.bowl-slot {
+    width: 100%;
+    line-height: 2;
+    border: 3px solid black;
+    border-radius: 10%;
+    padding: 12px;
+    overflow: hidden;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: aqua;
+    text-align: centre;
+}
+
+.cook-btn {
+    background-color: rgb(38, 0, 255);
+    padding: 12px 24px;
+    color: white;
+    border: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.loading {
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(153, 153, 255, 0.13);
+    z-index: 999;
+}
+
+.loading img {
+    max-width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    background-color: lightblue; /* Change the background color to light blue */
+    position: fixed;
+    top: 50%; /* Position the modal 50% from the top */
+    left: 50%; /* Position the modal 50% from the left */
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 100%;
+    max-width: 512px;
+    padding: 24px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    z-index: 9999; /* Set a high z-index to ensure the modal appears above other content */
+    margin: 0 auto; /* Remove the margin */
+    border: 3px solid black;
+    border-radius: 2%;
+}
+
+.modal-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+
+.modal-close {
+    /* Styles for the close button */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 12px;
+    right: 12px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+    color: gray;
+}
+
+
+.modal-content {
+    padding: 16px;
+    color: black;
+}
+
